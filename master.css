@@ -3,11 +3,32 @@
 /* selector por clase */
 .cabecera{
   background-color: lavender;
+  height: 200px;
 }
 .cabecera img{
-width: 100px;
-border-radius: 100%;
+  display: inline-block;
+  width: 150px;
+  border-radius: 100%;
+  position: relative;
+  right: 500px;
+  top: 25px;
 }
+.cabecera h3{
+  display: inline-block;
+  position: relative;
+  left: 50px;
+  bottom: 35px;
+}
+/* selector por id */
+#tituloPrincipal{
+  display: inline-block;
+  width: auto;
+  position: relative;
+  left: 300px;
+  bottom: 65px;
+
+}
+
 .navPrincipal{
   background-color: olive;
 
@@ -18,30 +39,73 @@ border-radius: 100%;
 .noticias{
   background-color: lavender;
 }
-.nota{
+.noticias h3{
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
+.nota1{
   background-color: olive;
+  width: 48%;
+  display: inline-block;
+  margin: 10px;
+  height: 600px;
+}
+.nota1 img{
+  display: inline-block;
+  position: relative;
+  left: 35%;
+  top: 10px;
+  width: auto;
+  height: 300px;
+}
+.nota1 h4{
+  text-align: center;
+}
+.nota1 p,a{
+  width: 90%;
+  position: relative;
+  left: 30px;
+  margin: 10px;
+}
+
+.nota2{
+  background-color: olive;
+  width: 48%;
+  display: inline-block;
+  margin: 10px;
+  height: 600px;
+  position: relative;
+  top: 32px;
+}
+.nota2 img{
+  display: inline-block;
+  position: relative;
+  left: 25%;
+  width: 300px;
+  height: auto;
+}
+.nota2 h4{
+  text-align: center;
+}
+
+.nota2 p,a{
+  width: 90%;
+  position: relative;
+  left: 30px;
+  padding: 10px;
 }
 .piePagina{
   background-color: pink;
 }
-/* selector por id */
-#tituloPrincipal{
-  display: block;
-  width: auto;
-  padding: 10px;
-  text-align: center;
-  border: 3px solid black;
-  border-radius: 10px;
-  border-bottom: 5px dotted red;
-  margin: 10px;
-}
+
 /* selector Combinador de descendientes */
 nav li{
  display: inline-block;
 }
 /* multiples selectores */
 h2,h3,h4,h5{
-  color: purple;
+  color: olive;
 }
 
 /* selector Combinador de hijo */
@@ -49,9 +113,23 @@ ul>li{
   list-style: none;
 }
 /* selector usando clases y etiquetas  */
+.galeria{
+  background-color: lavender;
+  height: 600px
+}
 .galeria img{
-  width: 200px;
-  height: auto;
+  background-color: pink;
+  margin: 7px;
+  width: 150px;
+height: 150px;
+  border: 1px solid black;
+  box-shadow: 10px 10px 10px 3px rgba(0, 0, 0, 0.21);
+  border-radius: 10px;
+}
+#pfixed{
+  position:sticky;
+  left:100px;
+  top:100px;
 }
 
 .navPrincipal li{
@@ -62,9 +140,6 @@ ul>li{
 .navPrincipal li:hover{
   background-color: green;
 
-  transition-delay: 0.5s;
-  transition-timing-function: ease-in-out;
-  transition-property: background-color;
 }
 /* pseudo elementos */
 .exciting-text::after {
@@ -76,13 +151,10 @@ ul>li{
   content: " <- BORING";
   color: red;
 }
+
 hr{
   width: 10%;
   margin-top: 20px;
   margin-bottom: 20px;
   border-bottom: 7px dotted red;
-}
-.nota img{
-  width: auto;
-  height: 300px;
 }
